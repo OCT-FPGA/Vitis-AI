@@ -63,7 +63,7 @@ rm -rf ./temp
 ##############################
 # Flash Device
 ##############################
-sudo /opt/xilinx/xrt/bin/xbmgmt program --device --base --image xilinx_vck5000_gen4x8_qdma_base_2
+# sudo /opt/xilinx/xrt/bin/xbmgmt program --device --base --image xilinx_vck5000_gen4x8_qdma_base_2
 
 ##############################
 # Warm reboot is required to recognize new SC image on the device.
