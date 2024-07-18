@@ -82,6 +82,9 @@ docker_run_params=$(cat <<-END
     -w /workspace \
     --rm \
     --network=host \
+    -e DISPLAY=$DISPLAY \
+    -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+    -v "$HOME/.Xauthority:/root/.Xauthority:rw" \
     ${DETACHED} \
     ${RUN_MODE} \
     $IMAGE_NAME \
